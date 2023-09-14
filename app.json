@@ -3,6 +3,7 @@
     "name": "boilerplate-expo",
     "slug": "boilerplate-expo",
     "version": "1.0.0",
+    "description": "This is a boilerplate app",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -11,11 +12,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "ios-boilerplate"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +25,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "56be0e24-9096-4717-8a1b-0704500bdb96"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/56be0e24-9096-4717-8a1b-0704500bdb96"
     }
   }
 }
